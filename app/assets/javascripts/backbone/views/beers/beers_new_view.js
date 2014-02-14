@@ -9,11 +9,13 @@ BeerNotes.Views.BeersNewView = Backbone.View.extend({
         this.options = options || {};
         _.bindAll(this, 'render');
         this.model = new BeerNotes.Models.Beer();
-//        this.formView = new BeerNotes.Views.BeersFormView({ model: this.model });
+        this.formView = new BeerNotes.Views.BeersFormView({ model: this.model });
     },
 
     render: function () {
         this.$el.html(this.template());
+
+        this.$('[data-form-fields]').append(this.formView.render().$el);
         return this;
     },
 
