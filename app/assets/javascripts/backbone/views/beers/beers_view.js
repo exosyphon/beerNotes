@@ -25,9 +25,11 @@ BeerNotes.Views.BeersView = Backbone.View.extend({
     },
 
     showNewForm: function () {
-        new BeerNotes.Views.BeersNewView({
-            el: '#new_content',
-            collection: this.collection
-        }).render();
+        this.$('.add_beer').attr('disabled', 'disabled');
+        $('#new_content').append(
+            new BeerNotes.Views.BeersNewView(
+                { collection: this.collection }
+            ).render().$el
+        );
     }
 });

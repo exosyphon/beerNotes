@@ -21,7 +21,7 @@ class BeersController < ApplicationController
 
     respond_to do |format|
       if @beer.save
-        format.json { render action: 'show', status: :created, location: @beer }
+        format.json { render json: @beer, status: :created }
       else
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
@@ -46,13 +46,13 @@ class BeersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_beer
-      @beer = Beer.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_beer
+    @beer = Beer.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def beer_params
-      params.require(:beer).permit(:name, :beerType, :notes)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def beer_params
+    params.require(:beer).permit(:name, :beerType, :notes)
+  end
 end

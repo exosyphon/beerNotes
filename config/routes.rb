@@ -1,5 +1,5 @@
 BeerNotes::Application.routes.draw do
-  resources :beers
+  resources :beers, only: [:index, :destroy, :create], controller: 'beers'
 
   resources :recipes
 
@@ -7,7 +7,7 @@ BeerNotes::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'templates#index'
+  #root 'beers#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

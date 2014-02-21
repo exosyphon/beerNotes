@@ -25,8 +25,8 @@ BeerNotes.Routers.BeersRouter = Backbone.Router.extend({
     },
 
     routes: {
-        '': 'main',
-        'page/:page': 'main'
+        '': '',
+        'beers': 'main'
     },
 
     main: function () {

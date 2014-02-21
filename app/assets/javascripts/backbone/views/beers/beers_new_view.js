@@ -20,7 +20,7 @@ BeerNotes.Views.BeersNewView = Backbone.View.extend({
     },
 
     handleCancel: function () {
-//        Backbone.trigger('form:read_mode');
+        $('.add_beer').removeAttr('disabled');
         this._resetModel(this.model);
         this.remove();
     },
@@ -31,6 +31,11 @@ BeerNotes.Views.BeersNewView = Backbone.View.extend({
     },
 
     handleSave: function() {
-
+        $('.add_beer').removeAttr('disabled');
+        this.model.set('name', $('#name').val());
+        this.model.set('beerType', $('#beerType').val());
+        this.model.set('notes', $('#notes').val());
+        this.collection.create(this.model);
+        this.handleCancel();
     }
 });
