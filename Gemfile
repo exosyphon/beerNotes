@@ -37,7 +37,11 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+gem 'therubyracer'
+gem 'less-rails'
+gem 'unicorn'
 
+gem 'twitter-bootstrap-rails'
 gem 'jasmine', '1.2.1'
 gem 'tilt-jade', '1.1.2'
 
