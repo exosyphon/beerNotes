@@ -1,8 +1,9 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json
 
   def index
-    @recipes = Recipe.all
+    respond_with(@recipes = Recipe.all)
   end
 
   def show
@@ -20,7 +21,7 @@ class RecipesController < ApplicationController
 
     respond_to do |format|
       if @recipe.save
-        format.json { render action: 'show', status: :created, location: @recipe }
+        format.json { render json: @recipe, status: :created}
       else
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
