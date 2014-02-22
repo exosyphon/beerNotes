@@ -3,11 +3,15 @@ BeerNotes.Views.RecipesView = Backbone.View.extend({
     template: JST["backbone/templates/recipes/recipes_view"],
 
     events: {
-        'click .add_recipe': 'showNewForm'
+        'click .add_recipe': 'showNewForm',
+        'click .back_to_beer': 'backToBeer'
     },
 
-    initialize: function () {
+    initialize: function (options) {
         _.bindAll(this, 'render');
+        this.parentView = options.parentView;
+
+        this.newRecipeView = null;
 
         this.indexView = new BeerNotes.Views.RecipesIndexView({
             el: '#index_content',
@@ -26,10 +30,21 @@ BeerNotes.Views.RecipesView = Backbone.View.extend({
 
     showNewForm: function () {
         this.$('.add_recipe').attr('disabled', 'disabled');
-        $('#new_content').append(
-            new BeerNotes.Views.RecipesNewView(
-                { collection: this.collection }
-            ).render().$el
+
+        this.newRecipeView = new BeerNotes.Views.RecipesNewView(
+            { collection: this.collection }
         );
+
+        $('#new_content').append(
+            this.newRecipeView.render().$el
+        );
+    },
+
+    backToBeer: function () {
+        if (this.newRecipeView != null)
+            this.newRecipeView.trigger('remove_new_view');
+
+        this.undelegateEvents();
+        this.parentView.render();
     }
 });

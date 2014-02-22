@@ -27,28 +27,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beers_router.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="30" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-9.416667" vertical-offset="479" max-vertical-offset="1470">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beers_row_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_row_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beers_index_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_index_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="6" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beers_router.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/beers/beers_router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="34" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="750">
+            <state line="27" column="13" selection-start="776" selection-end="776" vertical-scroll-proportion="0.58189654" vertical-offset="0" max-vertical-offset="696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipes_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+      <file leaf-file-name="beer_notes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beer_notes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2294854" vertical-offset="0" max-vertical-offset="960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beers_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="11" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+            <state line="17" column="12" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -57,7 +75,25 @@
       <file leaf-file-name="recipes_view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="57" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="47" column="27" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipes_new_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_new_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="17" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beers_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="28" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -85,37 +121,42 @@
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/beers_common_assets.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/beers/beers_collection.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/beer_notes.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/new_beer_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_form_view.jst.hbs" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_index_view.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_new_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_form_view.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_row_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_index_view.jst.hbs" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_row_view.js" />
         <option value="$PROJECT_DIR$/app/controllers/beers_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_form_view.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_index_view.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_row_view.js" />
-        <option value="$PROJECT_DIR$/app/views/beers/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/recipes/recipe.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_form_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_index_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_new_view.jst.hbs" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_row_view.jst.hbs" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_view.jst.hbs" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/recipes/recipes_collection.js" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_view.js" />
         <option value="$PROJECT_DIR$/app/views/recipes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_new_view.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_new_view.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/beers/beers_router.js" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/recipe.rb" />
+        <option value="$PROJECT_DIR$/app/models/beer.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140222054241_add_foreign_key_to_recipe.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140222050918_add_foreign_key_to_beers.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140222054802_add_foreign_key_to_recipes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/collections/recipes/recipes_collection.js" />
         <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_row_view.jst.hbs" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_view.jst.hbs" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_new_view.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_row_view.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_view.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_index_view.js" />
+        <option value="$PROJECT_DIR$/app/views/beers/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/beer_notes.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/beers/beers_router.js" />
       </list>
     </option>
   </component>
@@ -173,6 +214,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,6 +322,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="beers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beerNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -791,6 +882,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="SearchEverywhereHistory" value="_" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1109,20 +1201,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="105" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="22" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="420" />
@@ -1225,41 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04172462" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.04172462" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_index_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.39638385" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_row_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="408" selection-end="408" vertical-scroll-proportion="0.35465926" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="68" selection-end="68" vertical-scroll-proportion="0.02086231" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_row_view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="3" selection-start="420" selection-end="420" vertical-scroll-proportion="0.35465926" vertical-offset="0" max-vertical-offset="719">
@@ -1302,23 +1345,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_view.jst.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_form_view.jst.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="11" selection-start="604" selection-end="604" vertical-scroll-proportion="0.29017857" vertical-offset="0" max-vertical-offset="672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_index_view.jst.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="143" selection-end="143" vertical-scroll-proportion="0.11160714" vertical-offset="0" max-vertical-offset="672">
           <folding />
         </state>
       </provider>
@@ -1337,41 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="22" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.69208634" vertical-offset="479" max-vertical-offset="1470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_view.jst.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="70" selection-end="70" vertical-scroll-proportion="0.021582734" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_row_view.jst.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="138" selection-end="138" vertical-scroll-proportion="0.107913665" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="901" selection-end="901" vertical-scroll-proportion="0.41724616" vertical-offset="90" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/recipes/recipes_collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="22" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="855" selection-end="855" vertical-scroll-proportion="0.4798331" vertical-offset="0" max-vertical-offset="719">
@@ -1381,23 +1375,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beer_notes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.2503477" vertical-offset="0" max-vertical-offset="719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.021582734" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_new_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.6884562" vertical-offset="0" max-vertical-offset="719">
           <folding />
         </state>
       </provider>
@@ -1416,30 +1396,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/beers/beers_router.js">
+    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="34" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="765">
+        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.062586926" vertical-offset="0" max-vertical-offset="719">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_view.js">
+    <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="57" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+        <state line="3" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.062586926" vertical-offset="0" max-vertical-offset="719">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+        <state line="22" column="17" selection-start="849" selection-end="849" vertical-scroll-proportion="0.4589708" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140222054802_add_foreign_key_to_recipes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.10775862" vertical-offset="0" max-vertical-offset="696">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2294854" vertical-offset="0" max-vertical-offset="960">
+        <state line="5" column="28" selection-start="184" selection-end="184" vertical-scroll-proportion="0.10431154" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/collections/recipes/recipes_collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.12517385" vertical-offset="0" max-vertical-offset="719">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="267" selection-end="267" vertical-scroll-proportion="0.33379695" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_row_view.jst.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.1294964" vertical-offset="0" max-vertical-offset="695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/recipes/recipes_view.jst.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="40" selection-end="52" vertical-scroll-proportion="0.021582734" vertical-offset="0" max-vertical-offset="695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_index_view.jst.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="201" selection-end="201" vertical-scroll-proportion="0.19424461" vertical-offset="0" max-vertical-offset="695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/beers/beers_view.jst.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="48" selection-end="48" vertical-scroll-proportion="0.021582734" vertical-offset="0" max-vertical-offset="695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_row_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="27" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/beers/beers_index_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/recipes/recipes_new_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="17" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="30" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-9.416667" vertical-offset="479" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beer_notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/beers/beers_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="776" selection-end="776" vertical-scroll-proportion="0.58189654" vertical-offset="0" max-vertical-offset="696">
           <folding />
         </state>
       </provider>

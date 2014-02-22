@@ -3,21 +3,24 @@ class RecipesController < ApplicationController
   respond_to :html, :json
 
   def index
-    respond_with(@recipes = Recipe.all)
+    @beer = Beer.find params[:beer_id]
+    respond_with(@recipes = @beer.recipes.all)
   end
 
   def show
   end
 
   def new
-    @recipe = Recipe.new
+    @beer = Beer.find params[:beer_id]
+    @recipe = @beer.recipes.new
   end
 
   def edit
   end
 
   def create
-    @recipe = Recipe.new(recipe_params)
+    @beer = Beer.find params[:beer_id]
+    @recipe = @beer.recipes.new(recipe_params)
 
     respond_to do |format|
       if @recipe.save
@@ -39,6 +42,7 @@ class RecipesController < ApplicationController
   end
 
   def destroy
+    @beer = Beer.find params[:beer_id]
     @recipe.destroy
     respond_to do |format|
       format.json { head :no_content }

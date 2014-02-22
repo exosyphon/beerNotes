@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140129034259) do
+ActiveRecord::Schema.define(version: 20140222054802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "templates", force: true do |t|
+  create_table "beers", force: true do |t|
     t.string   "name"
     t.string   "beerType"
     t.string   "notes"
@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(version: 20140129034259) do
     t.string   "boilNotes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "beer_id"
   end
+
+  add_index "recipes", ["beer_id"], name: "index_recipes_on_beer_id", using: :btree
 
 end

@@ -9,8 +9,17 @@ window.BeerNotes = {
     Collections: {},
     Views: {},
     Routers: {},
-    init: function() {
-        new BeerNotes.Routers.BeersRouter();
-        Backbone.history.start();
+    init: function () {
+        if (!Backbone.History.started) {
+            new BeerNotes.Routers.BeersRouter();
+            Backbone.history.start();
+        } else {
+            var hash = window.location.hash;
+            new BeerNotes.Routers.BeersRouter();
+            Backbone.history.stop();
+            window.location.hash = hash;
+            Backbone.history.start();
+        }
     }
-};
+}
+;

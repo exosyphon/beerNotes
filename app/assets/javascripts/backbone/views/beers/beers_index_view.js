@@ -1,8 +1,6 @@
 BeerNotes.Views.BeersIndexView = Backbone.View.extend({
     initialize: function(options) {
-        if (!this.options) {
-            this.options = options || {};
-        }
+        this.parentView = options.parentView;
         _.bindAll(this, 'render');
     },
 
@@ -22,9 +20,9 @@ BeerNotes.Views.BeersIndexView = Backbone.View.extend({
         return index % 2 == 0 ? 'even' : 'odd';
     },
 
-    _renderCollectionIntoTable: function($table, collection, childViewType) {
+    _renderCollectionIntoTable: function($table, collection, childViewType, parentView) {
         collection.each(function(record, index){
-            var view = new childViewType({model: record});
+            var view = new childViewType({model: record, parentView: this.parentView});
             $table.append(view.render().$el.addClass(this.cycleClass(index)));
             this.createdChildView(view);
         }, this);

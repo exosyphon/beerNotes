@@ -13,7 +13,8 @@ BeerNotes.Views.BeersView = Backbone.View.extend({
             el: '#index_content',
             template: JST['backbone/templates/beers/beers_index_view'],
             collection: this.collection,
-            childView: BeerNotes.Views.BeersRowView
+            childView: BeerNotes.Views.BeersRowView,
+            parentView: this
         });
         this.collection.on('add', this.render, this);
     },

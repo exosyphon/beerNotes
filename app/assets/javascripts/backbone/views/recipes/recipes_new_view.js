@@ -6,7 +6,7 @@ BeerNotes.Views.RecipesNewView = Backbone.View.extend({
     },
 
     initialize: function (options) {
-        this.options = options || {};
+        this.on('remove_new_view', this.handleCancel, this);
         _.bindAll(this, 'render');
         this.model = new BeerNotes.Models.Recipe();
         this.formView = new BeerNotes.Views.RecipesFormView({ model: this.model });
@@ -30,7 +30,7 @@ BeerNotes.Views.RecipesNewView = Backbone.View.extend({
         model.set(this.model.defaults);
     },
 
-    handleSave: function(e) {
+    handleSave: function() {
         $('.add_recipe').removeAttr('disabled');
         this.model.set('ingredients', $('#ingredients').val());
         this.model.set('boilNotes', $('#boilNotes').val());

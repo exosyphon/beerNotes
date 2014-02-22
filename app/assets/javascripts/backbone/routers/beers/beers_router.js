@@ -12,7 +12,6 @@ BeerNotes.Routers.BeersRouter = Backbone.Router.extend({
             this.newObjects = [];
         });
 
-        this.recipes = new BeerNotes.Collections.RecipesCollection();
         this.beers = new BeerNotes.Collections.BeersCollection();
     },
 
@@ -27,18 +26,12 @@ BeerNotes.Routers.BeersRouter = Backbone.Router.extend({
 
     routes: {
         '': '',
-        'beers': 'beers',
-        'recipes': 'recipes'
+        'beers': 'beers'
     },
 
     beers: function () {
         this.beersView = this.provisionObject(this.beersView, BeerNotes.Views.BeersView, {collection: this.beers});
         this.beers.fetch().done(this.beersView.render);
-    },
-
-    recipes: function () {
-        this.recipesView = this.provisionObject(this.recipesView, BeerNotes.Views.RecipesView, {collection: this.recipes});
-        this.recipes.fetch().done(this.recipesView.render);
     }
 });
 
