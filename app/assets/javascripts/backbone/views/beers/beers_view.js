@@ -16,7 +16,7 @@ BeerNotes.Views.BeersView = Backbone.View.extend({
             childView: BeerNotes.Views.BeersRowView,
             parentView: this
         });
-        this.collection.on('add', this.render, this);
+        this.collection.on('change', this.render, this);
     },
 
     render: function () {

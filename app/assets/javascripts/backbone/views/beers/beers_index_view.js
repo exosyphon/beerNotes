@@ -6,7 +6,6 @@ BeerNotes.Views.BeersIndexView = Backbone.View.extend({
 
     render: function() {
         this.setElement(this.options.el);
-
         var $outer = $(this.options.template(this.renderOptions()));
         var $table = $('.listable', $outer).length == 0 ? $outer.filter('.listable') : $('.listable', $outer);
 
