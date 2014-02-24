@@ -1,3 +1,52 @@
 // Place all the styles related to the beers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.remove_beer_confirmation_modal {
+  margin-left: 25px;
+  ol.content {
+    overflow-y: auto;
+  }
+}
+
+.ui-dialog {
+  background-color: grey;
+  padding: 30px;
+  overflow: hidden;
+
+  .section, .ui-dialog-titlebar {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .ui-dialog-titlebar {
+    width: 100%;
+    color: darkblue;
+    font-size: 26px;
+  }
+
+  .ui-dialog-titlebar-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    text-align: center;
+    background-color: darkblue;
+    color: grey;
+    font-size: 70%;
+
+    &:hover {
+      background-color: mediumblue;
+      text-decoration: none;
+    }
+  }
+
+  .list_button {
+    margin-top: 5px;
+  }
+}

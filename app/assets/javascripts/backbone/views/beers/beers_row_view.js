@@ -3,7 +3,7 @@ BeerNotes.Views.BeersRowView = Backbone.View.extend(
         tagName: 'tbody',
         template: JST["backbone/templates/beers/beers_row_view"],
         events: {
-            'click .remove_beer': 'removeBeer',
+            'click .remove_beer': 'checkDelete',
             'click .go_recipes': 'goToRecipes'
         },
 
@@ -15,6 +15,17 @@ BeerNotes.Views.BeersRowView = Backbone.View.extend(
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
             return this;
+        },
+
+        checkDelete: function () {
+            this.modalView = new BeerNotes.Views.BaseModalView(
+                {
+                    title: 'Delete Beer?',
+                    template: JST['backbone/templates/modals/beer_modal_view']
+                }
+            );
+            this.modalView.on("confirm", this.removeBeer, this);
+            this.modalView.render();
         },
 
         removeBeer: function () {

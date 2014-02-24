@@ -45,6 +45,8 @@ gem 'twitter-bootstrap-rails'
 gem 'jasmine', '1.2.1'
 gem 'tilt-jade', '1.1.2'
 
+gem 'jquery-ui-rails'
+
 gem 'faker', '1.1.2'
 
 # Use ActiveModel has_secure_password
