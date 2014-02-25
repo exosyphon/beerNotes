@@ -82,8 +82,16 @@
 
 <%= javascript_tag do %>
     <!--window.BeerNotes.init();-->
+    if (!Backbone.History.started) {
     new BeerNotes.Routers.BeersRouter();
     Backbone.history.start();
+    } else {
+    var hash = window.location.hash;
+    new BeerNotes.Routers.BeersRouter();
+    Backbone.history.stop();
+    window.location.hash = hash;
+    Backbone.history.start();
+    }
 <% end %>
 
 </body>
