@@ -1,6 +1,6 @@
 BeerNotes.Models.Recipe = Backbone.Model.extend({
     defaults: {
-        ingredients: null,
+        name: null,
         boilNotes: null
     }
 });

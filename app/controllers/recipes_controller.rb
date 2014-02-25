@@ -24,7 +24,7 @@ class RecipesController < ApplicationController
 
     respond_to do |format|
       if @recipe.save
-        format.json { render json: @recipe, status: :created}
+        format.json { render json: @recipe, status: :created }
       else
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
@@ -42,7 +42,6 @@ class RecipesController < ApplicationController
   end
 
   def destroy
-    @beer = Beer.find params[:beer_id]
     @recipe.destroy
     respond_to do |format|
       format.json { head :no_content }
@@ -50,13 +49,13 @@ class RecipesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_recipe
-      @recipe = Recipe.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_recipe
+    @recipe = Recipe.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def recipe_params
-      params.require(:recipe).permit(:ingredients, :boilNotes)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def recipe_params
+    params.require(:recipe).permit(:name, :boilNotes)
+  end
 end

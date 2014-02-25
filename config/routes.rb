@@ -1,6 +1,8 @@
 BeerNotes::Application.routes.draw do
   resources :beers, only: [:index, :destroy, :create], controller: 'beers' do
-    resources :recipes, only: [:index, :destroy, :create], controller: 'recipes'
+    resources :recipes, only: [:index, :destroy, :create], controller: 'recipes' do
+      resources :ingredients, only: [:index, :destroy, :create], controller: 'ingredients'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

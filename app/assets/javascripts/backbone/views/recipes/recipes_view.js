@@ -17,9 +17,10 @@ BeerNotes.Views.RecipesView = Backbone.View.extend({
             el: '#index_content',
             template: JST['backbone/templates/recipes/recipes_index_view'],
             collection: this.collection,
-            childView: BeerNotes.Views.RecipesRowView
+            childView: BeerNotes.Views.RecipesRowView,
+            parentView: this
         });
-        this.collection.on('add', this.render, this);
+        this.collection.on('change', this.render, this);
     },
 
     render: function () {

@@ -1,15 +1,15 @@
-BeerNotes.Views.RecipesNewView = Backbone.View.extend({
-    template: JST["backbone/templates/recipes/recipes_new_view"],
+BeerNotes.Views.IngredientsNewView = Backbone.View.extend({
+    template: JST["backbone/templates/ingredients/ingredients_new_view"],
     events: {
-        'click .save_recipe': 'handleSave',
-        'click .cancel_recipe': 'handleCancel'
+        'click .save_ingredient': 'handleSave',
+        'click .cancel_ingredient': 'handleCancel'
     },
 
     initialize: function () {
         this.on('remove_new_view', this.handleCancel, this);
         _.bindAll(this, 'render');
-        this.model = new BeerNotes.Models.Recipe();
-        this.formView = new BeerNotes.Views.RecipesFormView({ model: this.model });
+        this.model = new BeerNotes.Models.Ingredient();
+        this.formView = new BeerNotes.Views.IngredientsFormView({ model: this.model });
     },
 
     render: function () {
@@ -20,7 +20,7 @@ BeerNotes.Views.RecipesNewView = Backbone.View.extend({
     },
 
     handleCancel: function () {
-        $('.add_recipe').removeAttr('disabled');
+        $('.add_ingredient').removeAttr('disabled');
         this._resetModel(this.model);
         this.remove();
     },
@@ -31,9 +31,11 @@ BeerNotes.Views.RecipesNewView = Backbone.View.extend({
     },
 
     handleSave: function() {
-        $('.add_recipe').removeAttr('disabled');
+        $('.add_ingredient').removeAttr('disabled');
         this.model.set('name', $('#name').val());
-        this.model.set('boilNotes', $('#boilNotes').val());
+        this.model.set('amount', $('#amount').val());
+        this.model.set('unit', $('#unit').val());
+        this.model.set('addTime', $('#addTime').val());
         this.collection.create(this.model);
         this.handleCancel();
     }

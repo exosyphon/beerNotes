@@ -1,4 +1,4 @@
-BeerNotes.Views.RecipesIndexView = Backbone.View.extend({
+BeerNotes.Views.IngredientsIndexView = Backbone.View.extend({
     initialize: function(options) {
         this.parentView = options.parentView;
         _.bindAll(this, 'render');
@@ -22,7 +22,7 @@ BeerNotes.Views.RecipesIndexView = Backbone.View.extend({
 
     _renderCollectionIntoTable: function($table, collection, childViewType) {
         collection.each(function(record, index){
-            var view = new childViewType({model: record, recipe_collection: collection, parentView: this.parentView});
+            var view = new childViewType({model: record, parentView: this.parentView});
             $table.append(view.render().$el.addClass(this.cycleClass(index)));
             this.createdChildView(view);
         }, this);
