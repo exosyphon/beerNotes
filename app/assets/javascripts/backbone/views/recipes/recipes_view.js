@@ -21,6 +21,7 @@ BeerNotes.Views.RecipesView = Backbone.View.extend({
             parentView: this
         });
         this.collection.on('change', this.render, this);
+        this.on('open_edit', this.showEditForm, this);
     },
 
     render: function () {
@@ -47,5 +48,17 @@ BeerNotes.Views.RecipesView = Backbone.View.extend({
 
         this.undelegateEvents();
         this.parentView.render();
+    },
+
+    showEditForm: function (options) {
+        this.$('.add_recipe').attr('disabled', 'disabled');
+        $('#new_content').append(
+            new BeerNotes.Views.RecipesNewView(
+                {
+                    collection: this.collection,
+                    model: options.model
+                }
+            ).render().$el
+        );
     }
 });

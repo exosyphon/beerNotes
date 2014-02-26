@@ -17,9 +17,11 @@ BeerNotes.Views.IngredientsView = Backbone.View.extend({
             el: '#index_content',
             template: JST['backbone/templates/ingredients/ingredients_index_view'],
             collection: this.collection,
-            childView: BeerNotes.Views.IngredientsRowView
+            childView: BeerNotes.Views.IngredientsRowView,
+            parentView: this
         });
         this.collection.on('change', this.render, this);
+        this.on('open_edit', this.showEditForm, this);
     },
 
     render: function () {
@@ -46,5 +48,17 @@ BeerNotes.Views.IngredientsView = Backbone.View.extend({
 
         this.undelegateEvents();
         this.parentView.render();
+    },
+
+    showEditForm: function (options) {
+        this.$('.add_ingredient').attr('disabled', 'disabled');
+        $('#new_content').append(
+            new BeerNotes.Views.IngredientsNewView(
+                {
+                    collection: this.collection,
+                    model: options.model
+                }
+            ).render().$el
+        );
     }
 });

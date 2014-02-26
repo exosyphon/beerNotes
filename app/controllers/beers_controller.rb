@@ -31,7 +31,7 @@ class BeersController < ApplicationController
   def update
     respond_to do |format|
       if @beer.update(beer_params)
-        format.json { head :no_content }
+        format.json { render json: @beer }
       else
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end

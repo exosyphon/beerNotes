@@ -17,6 +17,7 @@ BeerNotes.Views.BeersView = Backbone.View.extend({
             parentView: this
         });
         this.collection.on('change', this.render, this);
+        this.on('open_edit', this.showEditForm, this);
     },
 
     render: function () {
@@ -30,6 +31,18 @@ BeerNotes.Views.BeersView = Backbone.View.extend({
         $('#new_content').append(
             new BeerNotes.Views.BeersNewView(
                 { collection: this.collection }
+            ).render().$el
+        );
+    },
+
+    showEditForm: function (options) {
+        this.$('.add_beer').attr('disabled', 'disabled');
+        $('#new_content').append(
+            new BeerNotes.Views.BeersNewView(
+                {
+                    collection: this.collection,
+                    model: options.model
+                }
             ).render().$el
         );
     }

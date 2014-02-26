@@ -5,10 +5,10 @@ BeerNotes.Views.RecipesNewView = Backbone.View.extend({
         'click .cancel_recipe': 'handleCancel'
     },
 
-    initialize: function () {
+    initialize: function (options) {
         this.on('remove_new_view', this.handleCancel, this);
         _.bindAll(this, 'render');
-        this.model = new BeerNotes.Models.Recipe();
+        this.model = options.model || new BeerNotes.Models.Recipe();
         this.formView = new BeerNotes.Views.RecipesFormView({ model: this.model });
     },
 

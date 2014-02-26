@@ -4,10 +4,12 @@ BeerNotes.Views.BeersRowView = Backbone.View.extend(
         template: JST["backbone/templates/beers/beers_row_view"],
         events: {
             'click .remove_beer': 'checkDelete',
-            'click .go_recipes': 'goToRecipes'
+            'click .go_recipes': 'goToRecipes',
+            'click .edit': 'editBeer'
         },
 
         initialize: function (options) {
+            this.collection =
             this.parentView = options.parentView;
             this.recipes = new BeerNotes.Collections.RecipesCollection({beer_id: this.model.id});
         },
@@ -36,5 +38,10 @@ BeerNotes.Views.BeersRowView = Backbone.View.extend(
         goToRecipes: function () {
             this.recipesView = new BeerNotes.Views.RecipesView({collection: this.recipes, parentView: this.parentView});
             this.recipes.fetch().done(this.recipesView.render);
+        },
+
+        editBeer: function() {
+            this.parentView.trigger('open_edit', {model: this.model});
         }
+
     });

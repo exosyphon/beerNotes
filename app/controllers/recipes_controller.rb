@@ -34,7 +34,7 @@ class RecipesController < ApplicationController
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.json { head :no_content }
+        format.json { render json: @recipe }
       else
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end

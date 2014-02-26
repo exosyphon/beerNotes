@@ -1,7 +1,7 @@
 BeerNotes::Application.routes.draw do
-  resources :beers, only: [:index, :destroy, :create], controller: 'beers' do
-    resources :recipes, only: [:index, :destroy, :create], controller: 'recipes' do
-      resources :ingredients, only: [:index, :destroy, :create], controller: 'ingredients'
+  resources :beers, only: [:index, :destroy, :create, :update], controller: 'beers' do
+    resources :recipes, only: [:index, :destroy, :create, :update], controller: 'recipes' do
+      resources :ingredients, only: [:index, :destroy, :create, :update], controller: 'ingredients'
     end
   end
 

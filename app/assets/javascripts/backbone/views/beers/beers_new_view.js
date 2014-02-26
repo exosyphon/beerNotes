@@ -5,9 +5,9 @@ BeerNotes.Views.BeersNewView = Backbone.View.extend({
         'click .cancel_beer': 'handleCancel'
     },
 
-    initialize: function () {
+    initialize: function (options) {
         _.bindAll(this, 'render');
-        this.model = new BeerNotes.Models.Beer();
+        this.model = options.model || new BeerNotes.Models.Beer();
         this.formView = new BeerNotes.Views.BeersFormView({ model: this.model });
     },
 

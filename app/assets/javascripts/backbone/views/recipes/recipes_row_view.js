@@ -4,6 +4,7 @@ BeerNotes.Views.RecipesRowView = Backbone.View.extend(
     template: JST["backbone/templates/recipes/recipes_row_view"],
     events: {
         'click .remove_recipe': 'removeRecipe',
+        'click .edit': 'editRecipe',
         'click .go_to_ingredients': 'goToIngredients'
     },
 
@@ -25,5 +26,9 @@ BeerNotes.Views.RecipesRowView = Backbone.View.extend(
     goToIngredients: function () {
         this.ingredientsView = new BeerNotes.Views.IngredientsView({collection: this.ingredients, parentView: this.parentView});
         this.ingredients.fetch().done(this.ingredientsView.render);
+    },
+
+    editRecipe: function() {
+        this.parentView.trigger('open_edit', {model: this.model});
     }
 });
