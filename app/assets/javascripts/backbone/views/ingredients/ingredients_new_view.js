@@ -21,7 +21,6 @@ BeerNotes.Views.IngredientsNewView = Backbone.View.extend({
 
     handleCancel: function () {
         $('.add_ingredient').removeAttr('disabled');
-        this._resetModel(this.model);
         this.remove();
     },
 
