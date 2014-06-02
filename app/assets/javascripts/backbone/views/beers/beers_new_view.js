@@ -19,13 +19,9 @@ BeerNotes.Views.BeersNewView = Backbone.View.extend({
     },
 
     handleCancel: function () {
+        this.model.fetch();
         $('.add_beer').removeAttr('disabled');
         this.remove();
-    },
-
-    _resetModel: function(model) {
-        model.clear();
-        model.set(this.model.defaults);
     },
 
     handleSave: function() {
