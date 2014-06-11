@@ -48,7 +48,12 @@ class IngredientsController < ApplicationController
     end
   end
 
+  def all_ingredients
+    respond_with(@ingredients = Ingredient.all)
+  end
+
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_ingredient
     @ingredient = Ingredient.find(params[:id])

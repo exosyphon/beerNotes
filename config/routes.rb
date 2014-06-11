@@ -5,6 +5,9 @@ BeerNotes::Application.routes.draw do
     end
   end
 
+  get 'all_recipes' => 'recipes#all_recipes'
+  get 'all_ingredients' => 'ingredients#all_ingredients'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
